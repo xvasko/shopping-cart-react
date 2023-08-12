@@ -7,23 +7,23 @@ import { Button } from "react-bootstrap";
 
 
 async function createOrder(shoppingCartItems: any, navigate: any, nukeCart: any) {
-    let items = ""
-    for (const item of shoppingCartItems) {
-        items = items + ", " + item.id
-    }
+    // let items = ""
+    // for (const item of shoppingCartItems) {
+    //     items = items + ", " + item.id
+    // }
 
-    const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ customer_name: 'Spar Ro', items })
-    };
+    // const requestOptions = {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify({ customer_name: 'Jon Doe', items })
+    // };
 
-    const response = await fetch('http://127.0.0.1:8000/api/create-order/', requestOptions);
-    const data = await response.json();
+    // const response = await fetch('http://127.0.0.1:8000/api/create-order/', requestOptions);
+    // const data = await response.json();
 
     nukeCart()
     
-    navigate(`/confirmation`, {state: {orderNumber: data.id}});
+    navigate(`/confirmation`);
 }
 
 export function Cart() {
