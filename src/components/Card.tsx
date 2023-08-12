@@ -1,8 +1,9 @@
 import { trimPrice } from "../utils/trimPrice";
 import products from "../data/products.json"
 import { useShoppingCart } from '../context/ShoppingCartContext'
+import { CSSProperties } from "react";
 
-const cardStyle = {
+const cardStyle: CSSProperties = {
     border: "2px solid black",
     borderBottom: "6px solid black",
     borderRadius: "14px",
@@ -11,7 +12,7 @@ const cardStyle = {
     position: "relative",
 };
 
-const toastStyle = {
+const toastStyle: CSSProperties = {
     ...cardStyle,
     backgroundColor: "#00C6AE",
     position: "fixed",
@@ -22,7 +23,7 @@ const toastStyle = {
     right: "0",
 }
 
-const spanStyle = {
+const spanStyle: CSSProperties = {
     position: "absolute",
     bottom: 8,
     left: 16,
@@ -30,7 +31,7 @@ const spanStyle = {
     fontSize: "1.5rem"
 }
 
-const imgStyle = {
+const imgStyle: CSSProperties = {
     position: "absolute",
     top: "2px",
     right: "2px",

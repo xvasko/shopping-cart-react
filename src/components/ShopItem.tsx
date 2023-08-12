@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { AddButton } from "./AddButton"
+import { CSSProperties } from 'react'
 
 import { trimPrice } from "../utils/trimPrice";
 
@@ -12,7 +13,7 @@ type ShopItemProps = {
     bgColor: string,
 }
 
-const cardImgStyle = {
+const cardImgStyle: CSSProperties = {
     objectFit: "cover",
     width: "30%",
     padding: "18px 8px",

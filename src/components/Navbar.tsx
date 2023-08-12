@@ -1,8 +1,10 @@
 import { Container, Nav, Navbar as NavbarBootstrap } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import { NavLink } from "react-router-dom";
+import { CSSProperties } from "react";
 
-const navLinkStyle = {
+
+const navLinkStyle: CSSProperties = {
     width: "3rem",
     height: "3rem",
     position: "relative",
@@ -10,7 +12,7 @@ const navLinkStyle = {
     border: "none"
 }
 
-const divStyle = {
+const divStyle: CSSProperties = {
     border: "2px solid black",
     fontWeight: "bold",
     backgroundColor: "#E9E7FA",
